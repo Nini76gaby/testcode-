@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Testcode</title>
+    <script src="script.js"></script>
+    <style>
+      #popupBackground {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      .popup-content {
+        height: 50vh;
+        width: 50vw;
+        background-color: white;
+        border-radius: 8px;
+      }
+    </style>
   </head>
   <body>
+    <h1>Meine coole Seite</h1>
     <button onclick="openPopup()">Popup öffnen</button>
     <div id="popupBackground" onclick="closePopup()">
       <div class="popup-content" onclick="doNotClose(event)">
