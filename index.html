@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="openPopup()">Popup öffnen</button>
+    <div id="popupBackground" onclick="closePopup()">
+      <div class="popup-content" onclick="doNotClose(event)">
+        <form action="#">
+          <input type="text" />
+          <input type="text" />
+          <button onclick="save()">Speichern</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function openPopup(n, p) {
+        popupBackground.style.display = flex;
+      }
+      function closePopup() {
+        popupBackground.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
